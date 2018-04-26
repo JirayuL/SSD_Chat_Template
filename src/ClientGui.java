@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ClientGui extends JFrame implements ActionListener{
+public class ClientGui extends JFrame implements ActionListener {
 
     private JTextArea chatWindow;
     private JTextArea input;
@@ -32,7 +32,7 @@ public class ClientGui extends JFrame implements ActionListener{
         sendButton.setPreferredSize(new Dimension(100, 30));
         sendButton.addActionListener(this);
         add(chatWindow, BorderLayout.CENTER);
-        add(new JPanel(){
+        add(new JPanel() {
             {
                 setLayout(new FlowLayout(FlowLayout.CENTER));
                 add(input);
