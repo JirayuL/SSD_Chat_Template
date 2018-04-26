@@ -45,7 +45,6 @@ public class ClientGui extends JFrame implements ActionListener {
         chatWindow.append(message + "\n");
     }
 
-    @Override
     public void actionPerformed(ActionEvent e) {
         chatClient.sendMessage(input.getText());
         input.setText("");
